@@ -3,8 +3,9 @@ def reformat_languages(languages)
   new_hash = {}
   languages.each do |style, hash|
     hash.each do |language, another_hash|
-      if new_hash.keys.include?(language)
-        "hi"
+      keys = new_hash.keys
+      if keys.include?(language)
+        new_hash[language][:style] << style
       else
         style_array = []
         style_array << style
