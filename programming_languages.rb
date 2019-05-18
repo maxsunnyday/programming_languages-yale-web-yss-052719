@@ -12,7 +12,6 @@ def reformat_languages(languages)
           :type => another_hash[:type],
           :style => style_array
         }
-        binding.pry
       end
     end
   end
